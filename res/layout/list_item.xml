@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#ffffff"
+    android:padding="0dp"
+    
+>
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@drawable/customshaperelative"
+     android:padding="10dp" >
+
+     <ImageView
+         android:id="@+id/image"
+         android:layout_width="70dp"
+         android:layout_height="60dp"
+         android:layout_alignParentLeft="true"
+         android:scaleType="fitCenter"
+         android:background="@drawable/customshape"
+         android:fitsSystemWindows="true"
+         android:paddingRight="5dp"
+         android:paddingLeft="5dp"
+         android:paddingTop="5dp"
+         android:paddingBottom="5dp"
+          android:cropToPadding="true"
+         
+         />
+     
+     
+     
+
+     <TextView
+         android:id="@+id/food_name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:layout_toRightOf="@+id/image"
+         android:textColor="#000000"
+         android:textSize="13dp"
+         android:layout_marginLeft="3dp"
+         android:textStyle="bold" />
+
+     <ProgressBar
+         android:id="@+id/progressBar_listitem"
+         android:layout_width="40dp"
+         android:layout_height="50dp"
+         android:layout_alignLeft="@+id/image"
+         android:layout_centerVertical="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginLeft="14dp"
+         android:indeterminateDrawable="@drawable/pregressbar_circle"
+         android:scaleType="fitCenter" />
+    
+ </RelativeLayout>
+
+</LinearLayout>
